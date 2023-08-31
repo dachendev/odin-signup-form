@@ -1,0 +1,181 @@
+:root {
+  --accent-color: #F57304;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 100% Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  display: inline-block;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover {
+  background-color: rgba(245, 115, 4, 0.1);
+}
+
+#app {
+  padding: 3rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 1200px;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row > * {
+  width: 100%;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.col:empty {
+  display: none;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control {
+  display: block;
+  border: 1px solid #CCC;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: var(--accent-color);
+}
+
+.signup-form {
+  margin: 0 auto;
+  padding-top: 80px;
+  max-width: 480px;
+}
+
+.jumbo-img {
+  position: relative;
+  height: 800px;
+  border-radius: 3rem;
+  background-image: url('images/mae-mu-hkMGgTVBTSA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbo-img cite {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+}
+
+.jumbo-img cite > a {
+  color: inherit;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.brand img {
+  margin-right: 0.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.sub {
+  color: rgba(105, 105, 105, 0.75);
+  font-weight: 400;
+}
+
+.error {
+  border-color: red;
+}
+
+.error-feedback {
+  display: none;
+  margin-top: 0.25rem;
+  color: red;
+}
+
+.error ~ .error-feedback {
+  display: block;
+}

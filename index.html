@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orange (Odin Signup Form)</title>
+
+  <!-- Use emoji as favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍊</text></svg>" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="validate.js" defer></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+
+      <div class="row">
+        <div class="col">
+          <div class="signup-form">
+            <a class="brand mb-5" href="/">
+              &#x1F34A; Orange
+            </a>
+
+            <h1 class="title">Welcome to Orange</h1>
+            <h3 class="sub mb-5">Yes, our logo is a tangerine. Get over it.</h3>
+
+            <form class="mb-3" method="post" onsubmit="return validate();">
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input id="firstName" class="form-control" type="text" placeholder="Slim">
+                </div>
+
+                <div class="col">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input id="lastName" class="form-control" type="text" placeholder="Shady">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" class="form-control" type="email" placeholder="mmathers@gmail.com">
+                </div>
+
+                <div class="col">
+                  <label for="phoneNum" class="form-label">Phone number</label>
+                  <input id="phoneNum" class="form-control" type="tel" placeholder="(313) 666-7440">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="password" class="form-label">Password</label>
+                  <input id="password" class="form-control" type="password" placeholder="12+ Characters">
+                  <div class="error-feedback"></div>
+                </div>
+
+                <div class="col">
+                  <label for="passwordConf" class="form-label">Retype password</label>
+                  <input id="passwordConf" class="form-control" type="password" placeholder="12+ Characters">
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+
+            </form>
+
+            <p>
+              Already have an account?
+              <a href="#">Then sign in, you silly goose</a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="jumbo-img">
+            <cite>
+              Photo by that one <a
+                href="https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mae
+                Mu</a> guy on <a
+                href="https://unsplash.com/photos/hkMGgTVBTSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </cite>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
